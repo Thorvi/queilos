@@ -1,0 +1,182 @@
+/* Espaço para o footer não cobrir conteúdo - mantido do seu CSS global */
+/* O padding-bottom na main aqui pode ser mantido se for um ajuste específico para esta página */
+main {
+    padding-bottom: 100px;
+    padding-top: 20px;
+    /* Mantido para afastar o conteúdo do header */
+    background-color: #E6E6FA;
+    /* Define o fundo da main como lavanda, criando uma base suave */
+}
+
+/* REMOVIDO: A seção .intro-section foi movida para o CSS global (.banner-introducao-geral) */
+/*
+.intro-section { ... }
+.intro-section h1 { ... }
+.intro-section h1::after { ... }
+.intro-section p { ... }
+*/
+
+/* Container principal do mapa e formulário/informações */
+#map-container {
+    width: 90%;
+    max-width: 900px;
+    /* Aumentei um pouco a largura máxima */
+    margin: 20px auto 40px;
+    padding: 30px;
+    /* Aumentado o padding interno para mais "respiro" */
+    background-color: #FFDAB9;
+    /* Pêssego/Laranja Claro - Fundo suave para o container do mapa */
+    border-radius: 15px;
+    /* Bordas mais arredondadas */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    /* Sombra mais marcante e profunda */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    /* Adicionado Flexbox para alinhar conteúdo dentro */
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza o mapa e outros itens */
+    gap: 25px;
+    /* Espaçamento entre os elementos internos */
+}
+
+#map {
+    height: 500px;
+    /* Aumentei para um visual mais imersivo */
+    width: 100%;
+    border-radius: 10px;
+    /* Arredondado para combinar com o container */
+    border: 2px solid #004F73;
+    /* Borda mais visível com a cor principal */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+    /* Sombra interna para o mapa */
+}
+
+/* Seção de informações gerais ou filtros, se houver (mantendo a classe .info, mas aprimorando) */
+.info {
+    padding: 30px;
+    /* Padding aumentado */
+    background-color: white;
+    /* Fundo branco para clareza e contraste */
+    border-radius: 15px;
+    /* Arredondado para combinar com outros elementos */
+    margin-bottom: 30px;
+    width: 90%;
+    /* Mantido */
+    max-width: 800px;
+    /* Mantido */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: 1px solid #E6E6FA;
+    /* Borda sutil para separar do fundo principal */
+}
+
+/* Estilos para o pop-up do mapa (Leaflet) */
+.leaflet-popup-content {
+    min-width: 280px;
+    /* Ligeiramente maior para acomodar o conteúdo */
+    color: #361F0C;
+    /* Cor do texto geral no pop-up - Marrom Escuro */
+}
+
+.popup-content {
+    font-family: 'Open Sans', sans-serif;
+    /* Usando a fonte global do site */
+    text-align: left;
+    /* Garante que o texto dentro do pop-up não fique centralizado por padrão */
+}
+
+.popup-title {
+    color: #004F73;
+    /* Azul Escuro/Petróleo - Para o título do pop-up, para destaque */
+    margin-bottom: 12px;
+    /* Mais espaço abaixo do título */
+    font-size: 1.4em;
+    /* Mais destaque para o título */
+    border-bottom: 2px solid #FF7F50;
+    /* Linha divisória mais grossa e com cor de destaque */
+    padding-bottom: 10px;
+    font-weight: 700;
+    /* Bold mais forte */
+}
+
+.popup-info {
+    margin: 15px 0;
+    /* Mais espaço entre os blocos de informação */
+    line-height: 1.6;
+    /* Melhorar a legibilidade */
+}
+
+.popup-info strong {
+    color: #004F73;
+    /* Destaca labels com o azul escuro */
+}
+
+.popup-contact {
+    background-color: #E6E6FA;
+    /* Roxo claro/Lavanda - Fundo para a seção de contato no pop-up */
+    padding: 15px;
+    /* Aumentado o padding */
+    border-radius: 10px;
+    /* Mais arredondado */
+    margin-top: 20px;
+    /* Mais espaço acima */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+    /* Sombra interna sutil */
+}
+
+.contact-item {
+    margin: 10px 0;
+    /* Mais espaço entre os itens de contato */
+    display: flex;
+    align-items: center;
+    color: #361F0C;
+    /* Cor do texto de contato - Marrom Escuro */
+    font-size: 1.05em;
+}
+
+.contact-item i {
+    margin-right: 12px;
+    /* Mais espaço entre ícone e texto */
+    color: #FF7F50;
+    /* Laranja/Coral - Cor de destaque para os ícones de contato */
+    width: 22px;
+    /* Ligeiramente maior */
+    text-align: center;
+    font-size: 1.2em;
+    /* Ícones maiores */
+}
+
+/* Responsividade Básica (ajuste conforme necessário) */
+@media (max-width: 768px) {
+    /* REMOVIDO: Responsividade do .intro-section */
+    /*
+    .intro-section { ... }
+    .intro-section h1 { ... }
+    .intro-section p { ... }
+    */
+
+    #map-container {
+        padding: 20px;
+        margin: 15px auto 30px;
+    }
+
+    #map {
+        height: 350px;
+    }
+
+    .popup-title {
+        font-size: 1.2em;
+    }
+
+    .contact-item {
+        font-size: 0.95em;
+    }
+
+    .contact-item i {
+        font-size: 1.1em;
+    }
+}

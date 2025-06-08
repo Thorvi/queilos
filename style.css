@@ -1,0 +1,122 @@
+/* Garante que o Open Sans prevaleça em todo o site */
+body,
+body * {
+    font-family: 'Open Sans', sans-serif !important;
+    box-sizing: border-box;
+    /* Adiciona box-sizing para um melhor controle de layout */
+}
+
+html {
+    height: 100%;
+    /* Garante que html tenha altura total para min-height: 100vh funcionar no body */
+}
+
+body {
+    margin: 0;
+    background-color: #E6E6FA;
+    /* Roxo claro/Lavanda da sua paleta como fundo geral - RESTAURADO*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* AJUSTE ESTE VALOR para a altura EXATA do seu header fixo */
+    padding-top: [altura_do_seu_header_em_px];
+    /* Ex: padding-top: 220px; */
+    color: #361F0C;
+    /* Cor padrão de texto para o body, marrom escuro da sua paleta - RESTAURADO*/
+}
+
+/* Linha horizontal na parte inferior */
+.content-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #004F73;
+    /* Azul Escuro/Petróleo para a linha separadora, alinhado à paleta principal */
+    margin-top: 20px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px 30px;
+    /* REVERTIDO: Removidos background-color, border-radius, box-shadow e margin que foram adicionados aqui anteriormente */
+    /* Este main agora segue o padrão anterior de padding e crescimento flex. */
+}
+
+/* ESTILIZAÇÃO DOS TÍTULOS PADRONIZADOS: .banner-introducao-geral */
+/* Esta classe foi modificada para ser menor verticalmente e maior horizontalmente, com novo fundo */
+.banner-introducao-geral {
+    text-align: center;
+    max-width: 95%;
+    /* Aumentado horizontalmente para 95% da largura disponível */
+    margin: 30px auto 50px;
+    padding: 15px 30px;
+    /* Reduzido padding vertical para 15px, aumentado horizontal para 30px */
+    background-color: #FFDAB9;
+    /* Pêssego/Laranja Claro - Nova cor de fundo para o card */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.banner-introducao-geral h1 {
+    color: #004F73;
+    font-size: 2.2em;
+    /* Mantido menor, como na última revisão */
+    margin-bottom: 8px;
+    /* Reduzido um pouco a margem inferior */
+    position: relative;
+    padding-bottom: 8px;
+    /* Reduzido um pouco o padding inferior */
+}
+
+.banner-introducao-geral h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    /* Linha decorativa ligeiramente menor */
+    height: 2px;
+    /* Linha mais fina */
+    background-color: #FF7F50;
+    /* Laranja/Coral para a linha */
+    margin: 6px auto 0;
+    /* Ajustado um pouco a margem */
+    border-radius: 1px;
+}
+
+.banner-introducao-geral p {
+    color: #361F0C;
+    font-size: 1.0em;
+    /* Ligeiramente menor para compactar mais */
+    line-height: 1.5;
+    /* Reduzido o line-height */
+    max-width: 80%;
+    /* Ajustado para que o texto não se espalhe muito */
+    margin: 0 auto;
+}
+
+
+/* Exceção apenas para o título do header (se necessário) */
+.site-title h1 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 50px !important;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: auto;
+    }
+
+    .banner-introducao-geral {
+        margin: 20px auto 30px;
+        padding: 10px 20px;
+        /* Ajuste para mobile */
+        max-width: 90%;
+        /* Ajuste para mobile */
+    }
+
+    .banner-introducao-geral h1 {
+        font-size: 1.6em;
+    }
+
+    .banner-introducao-geral p {
+        font-size: 0.85em;
+    }
+}

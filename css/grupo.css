@@ -1,0 +1,68 @@
+/* Estilização para a lista de membros */
+.members-list-section {
+    max-width: 700px;
+    /* Reduzindo a largura máxima */
+    margin: 0 auto 40px;
+    /* Menos margem inferior */
+    padding: 15px;
+    /* Menos padding */
+}
+
+.members-container {
+    background-color: #E6E6FA;
+    /* Usando o Roxo claro/Lavanda como fundo */
+    border-radius: 10px;
+    /* Bordas ligeiramente menores */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    /* Sombra mais suave */
+    padding: 20px;
+    /* Menos padding */
+}
+
+.members-container p {
+    color: #361F0C;
+    /* Marrom Escuro para o texto dos membros */
+    font-size: 1.1em;
+    /* Ligeiramente menor */
+    padding: 8px 0;
+    /* Menos padding vertical */
+    border-bottom: 1px solid #D8D8D8;
+    /* Linha sólida mais clara */
+    margin: 0;
+    text-align: left;
+    /* Alinhando o texto à esquerda para um visual mais tradicional */
+}
+
+.members-container p:last-child {
+    border-bottom: none;
+}
+
+/* Responsividade (ajustes menores) */
+@media (max-width: 768px) {
+    /* REMOVIDO: Responsividade do .page-intro foi movida para o CSS global */
+    /*
+    .page-intro { ... }
+    .page-intro h1 { ... }
+    .page-intro p { ... }
+    */
+
+    .members-list-section {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .members-container {
+        padding: 15px;
+    }
+
+    .members-container p {
+        font-size: 0.95em;
+    }
+}
+
+/* REMOVIDO: Responsividade do .page-intro foi movida para o CSS global */
+/*
+@media (max-width: 480px) {
+    .page-intro h1 { ... }
+}
+*/

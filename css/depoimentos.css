@@ -1,0 +1,125 @@
+/* Estilização para a seção de introdução da página de depoimentos */
+.page-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 30px auto 50px;
+    /* Diminuído as margens superior e inferior */
+    padding: 20px;
+    /* Reduzido o padding vertical de 30px para 20px para diminuir a altura */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.page-intro h1 {
+    color: #004F73;
+    font-size: 3em;
+    margin-bottom: 12px;
+    /* Reduzido um pouco a margem inferior */
+    position: relative;
+    padding-bottom: 12px;
+    /* Reduzido um pouco o padding inferior */
+}
+
+.page-intro h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #FF7F50;
+    margin: 8px auto 0;
+    /* Ajustado um pouco a margem */
+    border-radius: 2px;
+}
+
+.page-intro p {
+    color: #361F0C;
+    font-size: 1.15em;
+    line-height: 1.6;
+    /* Reduzido um pouco o line-height para compactar o texto */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Estilização da Seção de Depoimentos (mantida como estava) */
+.testimonials-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 20px;
+}
+
+.testimonial-card {
+    background-color: #FFDAB9;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    flex: 1 1 auto;
+    min-width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+    color: #361F0C;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    color: #004F73;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* Responsividade (ajustes menores no .page-intro) */
+@media (max-width: 768px) {
+    .page-intro {
+        margin: 25px auto 35px;
+        /* Ajuste para mobile */
+        padding: 15px;
+        /* Reduzido o padding para mobile */
+    }
+
+    .page-intro h1 {
+        font-size: 2em;
+        /* Ajuste de fonte para mobile */
+    }
+
+    .page-intro p {
+        font-size: 0.95em;
+        /* Ajuste de fonte para mobile */
+    }
+
+    .testimonials-section {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+        max-width: 100%;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-intro h1 {
+        font-size: 1.6em;
+    }
+}

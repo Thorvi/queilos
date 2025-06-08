@@ -1,0 +1,111 @@
+/* NOVO BANNER (igual à referência) */
+.hero-banner {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.hero-banner h1 {
+    color: #004F73;
+    /* Azul Escuro/Petróleo - Forte e claro para o título principal. */
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-banner .subtitle {
+    color: #361F0C;
+    /* Marrom Escuro - Boa legibilidade e contraste com o fundo. */
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* FAQ - PERGUNTAS FREQUENTES */
+.toggle-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.toggle-item {
+    background: #FFDAB9;
+    /* Pêssego/Laranja Claro - Fundo suave para o item FAQ, mais acolhedor que o branco puro. */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.toggle-header {
+    padding: 20px 25px;
+    background-color: #004F73;
+    /* Azul Escuro/Petróleo - Cabeçalho do item FAQ, cor principal. */
+    color: white;
+    /* Texto em branco para alto contraste e legibilidade no azul escuro. */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-header:hover {
+    background-color: #FF7F50;
+    /* Laranja/Coral - Cor complementar para o hover, indica interatividade e transição. */
+}
+
+.toggle-header::after {
+    content: '+';
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    color: white;
+    /* Mantido branco para contraste com o azul escuro e laranja no hover. */
+}
+
+.toggle-item.active .toggle-header::after {
+    content: '-';
+}
+
+.toggle-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: #E6E6FA;
+    /* Roxo claro/Lavanda - Fundo para o conteúdo expandido, suave e distinto do header. */
+    line-height: 1.6;
+    color: #361F0C;
+    /* Marrom Escuro - Ótima legibilidade para o corpo do texto. */
+}
+
+.toggle-item.active .toggle-content {
+    padding: 20px 25px;
+    max-height: 1000px;
+}
+
+.toggle-content ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.toggle-content li {
+    margin-bottom: 8px;
+    color: #361F0C;
+    /* Marrom Escuro para os itens da lista. */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .toggle-header {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+    }
+
+    .toggle-item.active .toggle-content {
+        padding: 15px 20px;
+    }
+}
