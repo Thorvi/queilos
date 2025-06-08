@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-logo">
-            <img src="imagens/logo/labius_logo.png" alt="Logo Fissura Labiopalatina" class="logo-img">
+            <img src="imagens/logo/queilos_logo.png" alt="Logo Fissura Labiopalatina" class="logo-img">
             <span class="logo-text">Fissura Labiopalatina</span>
         </div>
         <div class="footer-info">

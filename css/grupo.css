@@ -39,12 +39,6 @@
 
 /* Responsividade (ajustes menores) */
 @media (max-width: 768px) {
-    /* REMOVIDO: Responsividade do .page-intro foi movida para o CSS global */
-    /*
-    .page-intro { ... }
-    .page-intro h1 { ... }
-    .page-intro p { ... }
-    */
 
     .members-list-section {
         padding: 10px;
@@ -59,10 +53,3 @@
         font-size: 0.95em;
     }
 }
-
-/* REMOVIDO: Responsividade do .page-intro foi movida para o CSS global */
-/*
-@media (max-width: 480px) {
-    .page-intro h1 { ... }
-}
-*/

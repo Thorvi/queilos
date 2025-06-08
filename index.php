@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sobre a Condição - Fissura Labiopalatina</title>
+    <title>Inicio - Fissura Labiopalatina</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/index.css">
     <meta name="description"
@@ -14,7 +14,7 @@
 
     <?php include 'header.php'; ?>
 
-    <main class="sobre-condicao">
+    <main> 
         <section class="banner-introducao-geral">
             <h1>Fissura Labiopalatina</h1>
             <p>Compreendendo profundamente a condição, seus impactos e possibilidades de tratamento</p>

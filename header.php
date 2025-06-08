@@ -3,6 +3,12 @@
         <div class="navbar-container">
             <div class="navbar">
                 <div class="nav-item">
+                        <a href="index.php" class="image-button">
+                            <img src="imagens/header/sobre_a_condicao.png">
+                            <span class="button-text">Inicio </span>
+                        </a>
+                    </div>
+                <div class="nav-item">
                     <a href="centros_de_atendimento.php" class="image-button">
                         <img src="imagens/header/mapa.png">
                         <span class="button-text">Centros</span>
@@ -12,12 +18,6 @@
                     <a href="depoimentos.php" class="image-button">
                         <img src="imagens/header/depoimentos.png">
                         <span class="button-text">Depoimentos</span>
-                    </a>
-                </div>
-                <div class="nav-item">
-                    <a href="index.php" class="image-button">
-                        <img src="imagens/header/sobre_a_condicao.png">
-                        <span class="button-text">Inicio </span>
                     </a>
                 </div>
                 <div class="nav-item">
